@@ -19,9 +19,6 @@
 - [ ] LED PWM command stays between 0 and 255
 - [ ] LCD backlight current limiting checked against module specifications
 
-## Photos
-
-images/README
 ## Known limitations
 
 - The relative light percentage is not a calibrated lux measurement.
