@@ -1,15 +1,13 @@
 # Test and Calibration Log
 
-Fill in actual observations; no measured results have been entered yet.
-
 ## Calibration
 
 | Condition | Raw ADC reading | LED PWM command | Notes |
 | --- | --- | --- | --- |
-| LDR covered | TBD | TBD | |
-| Dim room | TBD | TBD | |
-| Normal room lighting | TBD | TBD | |
-| Bright direct light | TBD | TBD | |
+| LDR covered | 217 | 218 | |
+| Dim room | 270 | 200 | |
+| Normal room lighting | 497 | 129 | |
+| Bright direct light | 994 | 0 | |
 
 Use the observed ADC readings to update `darkReading` and `brightReading` in the firmware. Keep `darkReading < brightReading` for the present LDR wiring.
 
