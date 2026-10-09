@@ -1,6 +1,6 @@
 # Hardware / KiCad
 
-The breadboard prototype is complete according to the project author. The KiCad schematic and PCB layout have **not** been created yet.
+Breadboard prototype complete. In progress on KiCad for PCB design
 
 ## Intended PCB interface
 Arduino signals: 5V, GND, A0, D3, D4, D5, D6, D9, D11, D12.
