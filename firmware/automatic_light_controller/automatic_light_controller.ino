@@ -5,9 +5,8 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 6);
 const int lightPin = A0;
 const int ledPin = 9;
 
-// Adjust after testing your sensor
-const int darkReading = 100;
-const int brightReading = 900;
+const int darkReading = 210;
+const int brightReading = 990;
 
 float filteredLight = 0;
 
@@ -51,7 +50,7 @@ void loop() {
   );
 
   lightPercent = constrain(lightPercent, 0, 100);
-
+  // Prints out the values onto the LCD display
   lcd.setCursor(0, 0);
   lcd.print("Light: ");
   lcd.print(lightPercent);
