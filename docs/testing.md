@@ -4,12 +4,10 @@
 
 | Condition | Raw ADC reading | LED PWM command | Notes |
 | --- | --- | --- | --- |
-| LDR covered | 217 | 218 | |
-| Dim room | 270 | 200 | |
-| Normal room lighting | 497 | 129 | |
-| Bright direct light | 994 | 0 | |
-
-Use the observed ADC readings to update `darkReading` and `brightReading` in the firmware. Keep `darkReading < brightReading` for the present LDR wiring.
+| LDR covered | 217 | 218 | Covered with Finger |
+| Dim room | 270 | 200 | Covered it by cupping hand |
+| Normal room lighting | 497 | 129 |Room isn't that bright naturally|
+| Bright direct light | 994 | 0 | Shined phone light |
 
 ## Functional checks
 
