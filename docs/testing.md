@@ -21,8 +21,7 @@
 
 ## Photos
 
-Add your own circuit photos under `images/` and link them from the README.
-
+images/README
 ## Known limitations
 
 - The relative light percentage is not a calibrated lux measurement.
