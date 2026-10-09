@@ -78,8 +78,8 @@ See [`docs/testing.md`](docs/testing.md) for a measurement template.
 
 - [x] Assemble the breadboard circuit (reported complete)
 - [x] Write integrated Arduino firmware
-- [ ] Record calibration data and test results
-- [ ] Add photographs of the physical prototype
+- [x] Record calibration data and test results
+- [x] Add photographs of the physical prototype
 - [ ] Capture the circuit schematic in KiCad
 - [ ] Design and verify the PCB layout
 - [ ] Export fabrication files
