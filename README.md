@@ -2,7 +2,6 @@
 
 An Arduino UNO R3 prototype that uses a photoresistor (LDR) to measure ambient light, automatically adjusts LED brightness with pulse-width modulation (PWM), and displays the relative light level and PWM value on a 16×2 LCD.
 
-**Status:** Breadboard circuit assembled; PCB design planned. The firmware below is the current sketch supplied by the project author. Calibration and performance measurements are not yet documented.
 
 ## Features
 - Analog light sensing through a photoresistor voltage divider
@@ -48,10 +47,8 @@ The LDR and resistor form a voltage divider. With this orientation, more light g
 | 12 D5 | D4 |
 | 13 D6 | D3 |
 | 14 D7 | D6 |
-| 15 A | 5V through a suitable backlight current-limiting resistor, if needed |
+| 15 A | 5v through a 220Ω resistor to not overdraw current for LED |
 | 16 K | GND |
-
-LCD pins 7–10 are unused in 4-bit mode. Check your LCD module's backlight specifications before choosing the series resistor.
 
 ## Firmware
 
@@ -66,8 +63,6 @@ The sketch uses the `LiquidCrystal` library included with the Arduino IDE.
 3. The filtered ADC value is mapped inversely to an 8-bit PWM command (0–255) on D9.
 4. The LCD displays a relative light percentage and the PWM command.
 5. Serial Monitor prints the raw ADC and PWM values at 9600 baud.
-
-The initial firmware uses `darkReading = 100` and `brightReading = 900`. **These are placeholder calibration values**, not verified sensor measurements. Replace them with measured values for your lighting conditions. The displayed percentage is a relative scale, **not lux**.
 
 ## Suggested tests
 
