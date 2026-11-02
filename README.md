@@ -64,14 +64,6 @@ The sketch uses the `LiquidCrystal` library included with the Arduino IDE.
 4. The LCD displays a relative light percentage and the PWM command.
 5. Serial Monitor prints the raw ADC and PWM values at 9600 baud.
 
-## Suggested tests
-
-- Cover the LDR and observe the ADC reading, PWM command, and LED.
-- Illuminate the LDR and verify the LED dims.
-- Verify LCD text updates without leftover characters.
-- Record dark and bright ADC readings and adjust calibration constants.
-- Check whether the LED illuminates the LDR and causes feedback.
-
 See [`docs/testing.md`](docs/testing.md) for a measurement template.
 
 ## Project roadmap
@@ -80,8 +72,8 @@ See [`docs/testing.md`](docs/testing.md) for a measurement template.
 - [x] Write integrated Arduino firmware
 - [x] Record calibration data and test results
 - [x] Add photographs of the physical prototype
-- [ ] Capture the circuit schematic in KiCad
-- [ ] Design and verify the PCB layout
+- [x] Capture the circuit schematic in KiCad
+- [x] Design and verify the PCB layout
 - [ ] Export fabrication files
 - [ ] Fabricate and test a physical PCB
 
